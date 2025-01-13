@@ -15,11 +15,11 @@ sudo apt install -y python3 python3-pip portaudio19-dev python3-fastapi python3-
 
 # Instalace Seeed voicecard
 echo "Installing Seeed voicecard..."
-if [ -d /opt/audio/seeed-voicecard ]; then
-    cd /opt/audio/seeed-voicecard
+if [ -d /opt/oldbot_audio/audio/seeed-voicecard ]; then
+    cd /opt/oldbot_audio/audio/seeed-voicecard
     sudo ./install.sh
 else
-    echo "Error: /opt/audio/seeed-voicecard not found. Skipping voicecard installation."
+    echo "Error: /opt/oldbot_audio/audio/seeed-voicecard not found. Skipping voicecard installation."
 fi
 
 # Přesun konfiguračního souboru ~/.asoundrc
