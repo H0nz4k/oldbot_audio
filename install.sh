@@ -13,10 +13,11 @@ apt list --upgradable -y
 echo "Installing necessary packages..."
 sudo apt install -y python3 python3-pip portaudio19-dev python3-fastapi python3-uvicorn lsof git git-lfs docker.io
 
+
 # Instalace Seeed voicecard
 echo "Installing Seeed voicecard..."
 if [ -d /opt/oldbot_audio/audio/seeed-voicecard ]; then
-    cd /opt/oldbot_audio/audio/seeed-voicecard
+    cd /opt/oldbot_audio/audio/seeed-voicecard/
     sudo ./install.sh
 else
     echo "Error: /opt/oldbot_audio/audio/seeed-voicecard not found. Skipping voicecard installation."
